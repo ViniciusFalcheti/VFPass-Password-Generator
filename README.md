@@ -114,7 +114,7 @@ O frontend estará disponível em `http://localhost:5173`
 
 ## 🧪 Exemplo de Uso
 
-![image](https://github.com/user-attachments/assets/f997507e-588d-4683-a574-314540bfe0e3)
+![image](https://github.com/user-attachments/assets/9e0c8151-a2e6-4fa1-bd8f-f3ed10f3a203)
 
 ---
 
