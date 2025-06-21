@@ -54,7 +54,7 @@ vf-passgen/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/vf-passgen.git
+git clone https://github.com/ViniciusFalcheti/VFPass-Password-Generator.git
 cd vf-passgen
 ```
 
@@ -77,16 +77,17 @@ POST /generate
 Content-Type: application/json
 ```
 
-**Body exemplo:**
+**Parâmetros da URL (query string):**
 
-```json
-{
-  "length": 12,
-  "uppercase": true,
-  "lowercase": true,
-  "numbers": true,
-  "symbols": true
-}
+- `length`: número de caracteres da senha (ex: 8, 12, 16)
+- `numbers`: `true` ou `false` (incluir números)
+- `caps`: `true` ou `false` (incluir letras maiúsculas)
+- `symbols`: `true` ou `false` (incluir símbolos especiais)
+
+**Exemplo de requisição:**
+
+```
+GET http://localhost:3333/senha?length=12&numbers=true&caps=true&symbols=true
 ```
 
 **Resposta:**
@@ -113,19 +114,13 @@ O frontend estará disponível em `http://localhost:5173`
 
 ## 🧪 Exemplo de Uso
 
-![demo](https://user-images.githubusercontent.com/seu-usuario/exemplo.gif)
+![image](https://github.com/user-attachments/assets/f997507e-588d-4683-a574-314540bfe0e3)
 
 ---
 
 ## 🙋 Contribuições
 
 Contribuições são bem-vindas! Sinta-se livre para abrir issues ou pull requests.
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
 
