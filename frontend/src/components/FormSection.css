@@ -1,0 +1,112 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    padding: 4rem;
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        & .div-password {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            gap: 0.75rem;
+            background-color: #F3F4F6;
+            border-radius: 0.5rem;
+            
+            & input {
+                flex: 1;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                font-size: 2rem;
+            }
+        }
+
+        & .div-filters {
+          display: flex;
+          flex-direction: row;
+          /* justify-content: space-between; */
+          gap: 1rem;
+
+          & div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 50%;
+            /* align-items: center; */
+          }
+
+          .div-length {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 0.5rem;
+            align-items: center;
+
+            & input[type="number"] {
+              width: 3rem;
+            }
+
+            & input[type="range"] {
+              flex: 1;
+            }
+          }
+
+          & .checkbox {
+            align-items: center;
+            display: flex;
+            gap: 0.25rem;
+          }
+
+          & input[type="checkbox"] {
+            width: 1.5rem;
+            height: 1.5rem;
+            cursor: pointer;
+            border-radius: 0.25rem;
+            border: 1px solid #D1D5DE;
+          }
+        }
+
+        & .div-buttons {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          align-items: center;
+
+          & button {
+            width: 50%;
+          }
+        }
+      
+            & label {
+                font-weight: 600;
+            }
+
+            & input {
+                padding: 0.5rem;
+                border-radius: 0.25rem;
+                border: 1px solid #D1D5DE;
+                background-color: #F9FAFB;
+                color: #1F2937;
+            }
+        }
+
+    & .icon-button {
+      all: unset;
+      cursor: pointer;
+    }
+
+    & .icon-button:hover {
+      
+      color: #2563eb;
+      opacity: 0.8;
+    }
+
+}

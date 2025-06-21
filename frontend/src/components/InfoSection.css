@@ -1,0 +1,28 @@
+aside {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
+    background-color: #D1D5DE;
+    color: #1F2937;
+
+    .aside-container {
+        max-width: 31rem;
+
+        & > img {
+            margin-top: 2rem;
+        }
+    }
+
+    h1 {
+      margin-block: 0rem;  
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+}
